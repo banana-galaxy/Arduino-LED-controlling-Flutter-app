@@ -1,0 +1,110 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.wifi_app"
+4    android:versionCode="4001"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:2:5-66
+11-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:2:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:3:5-79
+12-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:3:22-76
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:4:5-81
+13-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:4:22-78
+14    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+14-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:5:5-85
+14-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:5:22-82
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[:network_info_plus] /home/alex/github/wifi_app/build/network_info_plus/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-79
+15-->[:network_info_plus] /home/alex/github/wifi_app/build/network_info_plus/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- required for: `WifiManager.startScan` -->
+16-->[:network_info_plus] /home/alex/github/wifi_app/build/network_info_plus/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-76
+16-->[:network_info_plus] /home/alex/github/wifi_app/build/network_info_plus/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-73
+17    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+17-->[:wifi_scan] /home/alex/github/wifi_app/build/wifi_scan/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-76
+17-->[:wifi_scan] /home/alex/github/wifi_app/build/wifi_scan/intermediates/merged_manifest/release/AndroidManifest.xml:11:22-73
+18
+19    <application
+20        android:name="android.app.Application"
+20-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:8:9-42
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.6.0] /home/alex/.gradle/caches/transforms-3/7e9df2ac2213a6bd3cef0f2f27870d79/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+22        android:icon="@mipmap/ic_launcher"
+22-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:9:9-43
+23        android:label="wifi_app" >
+23-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:7:9-33
+24        <activity
+24-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:10:9-30:20
+25            android:name="com.example.wifi_app.MainActivity"
+25-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:11:13-41
+26            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+26-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:15:13-163
+27            android:exported="true"
+27-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:12:13-36
+28            android:hardwareAccelerated="true"
+28-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:16:13-47
+29            android:launchMode="singleTop"
+29-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:13:13-43
+30            android:theme="@style/LaunchTheme"
+30-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:14:13-47
+31            android:windowSoftInputMode="adjustResize" >
+31-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:17:13-55
+32
+33            <!--
+34                 Specifies an Android theme to apply to this Activity as soon as
+35                 the Android process has started. This theme is visible to the user
+36                 while the Flutter UI initializes. After that, this theme continues
+37                 to determine the Window background behind the Flutter UI.
+38            -->
+39            <meta-data
+39-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:22:13-25:17
+40                android:name="io.flutter.embedding.android.NormalTheme"
+40-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:23:15-70
+41                android:resource="@style/NormalTheme" />
+41-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:24:15-52
+42
+43            <intent-filter>
+43-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:26:13-29:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:27:17-68
+44-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:27:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:28:17-76
+46-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:28:27-74
+47            </intent-filter>
+48        </activity>
+49        <!--
+50             Don't delete the meta-data below.
+51             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+52        -->
+53        <meta-data
+53-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:33:9-35:33
+54            android:name="flutterEmbedding"
+54-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:34:13-44
+55            android:value="2" />
+55-->/home/alex/github/wifi_app/android/app/src/main/AndroidManifest.xml:35:13-30
+56
+57        <uses-library
+57-->[androidx.window:window:1.0.0-beta04] /home/alex/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+58            android:name="androidx.window.extensions"
+58-->[androidx.window:window:1.0.0-beta04] /home/alex/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+59            android:required="false" />
+59-->[androidx.window:window:1.0.0-beta04] /home/alex/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+60        <uses-library
+60-->[androidx.window:window:1.0.0-beta04] /home/alex/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+61            android:name="androidx.window.sidecar"
+61-->[androidx.window:window:1.0.0-beta04] /home/alex/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+62            android:required="false" />
+62-->[androidx.window:window:1.0.0-beta04] /home/alex/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+63    </application>
+64
+65</manifest>

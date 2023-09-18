@@ -1,0 +1,4 @@
+#Wed Sep 13 16:52:51 PDT 2023
+base.0=/home/alex/github/wifi_app/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
